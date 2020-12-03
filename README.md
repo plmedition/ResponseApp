@@ -1,2 +1,2 @@
 # ResponseApp
-Application to provide all kind of responses
+Application to provide all responses
