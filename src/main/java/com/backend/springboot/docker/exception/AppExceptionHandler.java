@@ -20,7 +20,7 @@ public class AppExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(AppException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public ResponseEntity<ErrorDto> handleException(AppException appException){
+    public ResponseEntity<ErrorDto> handleException(AppException appException) {
         return appBuilder.buildErrorDto(appException.getFeedbackMessageEnum().getValue());
     }
 }

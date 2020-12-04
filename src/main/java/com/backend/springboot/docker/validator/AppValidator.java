@@ -36,20 +36,20 @@ public class AppValidator {
         return true;
     }
 
-    public boolean validateGetResponseRequestParams(ResponseRequestParams responseRequestParams) throws AppException{
+    public boolean validateGetResponseRequestParams(ResponseRequestParams responseRequestParams) throws AppException {
         validateResponseRequestParams(responseRequestParams);
         validatePersonId(responseRequestParams);
         validateQuestionId(responseRequestParams);
         return true;
     }
 
-    public boolean validateGetPersonDtoListByQuestion(ResponseRequestParams responseRequestParams)throws AppException{
+    public boolean validateGetPersonDtoListByQuestion(ResponseRequestParams responseRequestParams) throws AppException {
         validateResponseRequestParams(responseRequestParams);
         validateQuestionId(responseRequestParams);
         return true;
     }
 
-    public boolean validateGetResponsesByQuestion(ResponseRequestParams responseRequestParams) throws AppException{
+    public boolean validateGetResponsesByQuestion(ResponseRequestParams responseRequestParams) throws AppException {
 
         validateResponseRequestParams(responseRequestParams);
         validateQuestionId(responseRequestParams);
@@ -59,7 +59,7 @@ public class AppValidator {
 
     }
 
-    private boolean validateResponseRequestParams(ResponseRequestParams responseRequestParams) throws AppException{
+    private boolean validateResponseRequestParams(ResponseRequestParams responseRequestParams) throws AppException {
 
         if (responseRequestParams == null) {
             throw new AppException(HttpStatus.BAD_REQUEST.toString(), FeedbackMessageEnum.ADD_RESPONSE_REQUEST_PARAMS_NULL);
@@ -68,7 +68,7 @@ public class AppValidator {
 
     }
 
-    private boolean validatePersonId(ResponseRequestParams responseRequestParams)throws AppException{
+    private boolean validatePersonId(ResponseRequestParams responseRequestParams) throws AppException {
 
         if (responseRequestParams.getPersonId() == null) {
             throw new AppException(HttpStatus.BAD_REQUEST.toString(), FeedbackMessageEnum.PERSON_ID_NULL);
@@ -77,7 +77,7 @@ public class AppValidator {
 
     }
 
-    private boolean validateQuestionId(ResponseRequestParams responseRequestParams) throws AppException{
+    private boolean validateQuestionId(ResponseRequestParams responseRequestParams) throws AppException {
 
         if (responseRequestParams.getQuestionId() == null) {
             throw new AppException(HttpStatus.BAD_REQUEST.toString(), FeedbackMessageEnum.QUESTION_ID_NULL);
@@ -95,27 +95,27 @@ public class AppValidator {
 
     }
 
-    private boolean validateResponseId(ResponseRequestParams responseRequestParams)throws AppException{
+    private boolean validateResponseId(ResponseRequestParams responseRequestParams) throws AppException {
 
-        if(responseRequestParams.getResponseId() == null){
+        if (responseRequestParams.getResponseId() == null) {
             throw new AppException(HttpStatus.BAD_REQUEST.toString(), FeedbackMessageEnum.RESPONSE_ID_NULL);
         }
         return true;
 
     }
 
-    private boolean validateStartDate(ResponseRequestParams responseRequestParams) throws AppException{
+    private boolean validateStartDate(ResponseRequestParams responseRequestParams) throws AppException {
 
-        if(responseRequestParams.getStartDate() == null){
+        if (responseRequestParams.getStartDate() == null) {
             throw new AppException(HttpStatus.BAD_REQUEST.toString(), FeedbackMessageEnum.START_DATE_NULL);
         }
         return true;
 
     }
 
-    private boolean validateEndDate(ResponseRequestParams responseRequestParams) throws AppException{
+    private boolean validateEndDate(ResponseRequestParams responseRequestParams) throws AppException {
 
-        if(responseRequestParams.getEndDate() == null){
+        if (responseRequestParams.getEndDate() == null) {
             throw new AppException(HttpStatus.BAD_REQUEST.toString(), FeedbackMessageEnum.END_DATE_NULL);
         }
         return true;

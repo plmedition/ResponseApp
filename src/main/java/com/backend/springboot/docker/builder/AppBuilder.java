@@ -3,7 +3,6 @@ package com.backend.springboot.docker.builder;
 import com.backend.springboot.docker.dto.ErrorDto;
 import com.backend.springboot.docker.dto.PersonDto;
 import com.backend.springboot.docker.dto.ResponseDto;
-import com.backend.springboot.docker.response.entity.Response;
 import com.backend.springboot.docker.response.service.params.request.ResponseRequestParams;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

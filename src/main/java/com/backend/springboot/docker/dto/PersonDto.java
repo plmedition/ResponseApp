@@ -4,6 +4,11 @@ import com.backend.springboot.docker.person.entity.Person;
 
 import java.time.LocalDate;
 
+/**
+ * Dto to retrieve information regarding {@link Person} through
+ * the {@link com.backend.springboot.docker.controller.ResponseController}
+ */
+
 public class PersonDto extends Person {
 
     public PersonDto(Long id, String name, LocalDate entryDate, String response){

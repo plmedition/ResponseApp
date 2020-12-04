@@ -1,5 +1,8 @@
 package com.backend.springboot.docker.exception;
 
+/**
+ * Enum used to provided feedback in case of a {@link AppException} is thrown
+ */
 public enum FeedbackMessageEnum {
     ADD_RESPONSE_REQUEST_PARAMS_NULL("addResponseRequestParams.must.be.not.null"),
     PERSON_ID_NULL("person.id.name.must.be.not.null"),

@@ -1,5 +1,12 @@
 package com.backend.springboot.docker.dto;
 
+import com.backend.springboot.docker.person.entity.Person;
+
+/**
+ * Dto to retrieve information regarding
+ * {@link com.backend.springboot.docker.response.entity.Response} through
+ * the {@link com.backend.springboot.docker.controller.ResponseController}
+ */
 public class ResponseDto {
     private Long responseId;
     private String question;
