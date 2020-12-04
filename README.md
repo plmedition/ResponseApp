@@ -2,11 +2,11 @@
 
 ## Follow the points
 
-You can find the 10 points across the code.
-The first four within the flyway migration db package.
-From 5 to 8 within the ResponseController and the services within
-Point 9 within PersonCalculator
-Point 10 within ResponseServiceImplTest
+* You can find the 10 points across the code.
+* The first four within the flyway migration db package.
+* From 5 to 8 within the ResponseController and the services within
+* Point 9 within PersonCalculator
+* Point 10 within ResponseServiceImplTest
 
 ## Before anything...
 Check if you have installed these features in your machine:
